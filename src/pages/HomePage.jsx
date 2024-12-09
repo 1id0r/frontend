@@ -1,8 +1,10 @@
+import { Feed } from '../cmps/Feed'
+
 export function HomePage() {
   return (
-    <section className='home-page'>
-      <h1>Welcome to Your App</h1>
-      <p>Start building something amazing!</p>
-    </section>
+    <div className='home'>
+      <h1>Comment Feed</h1>
+      <Feed />
+    </div>
   )
 }

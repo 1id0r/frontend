@@ -1,0 +1,110 @@
+.feed {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+
+  .feed-form {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .form-inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .email-input,
+      .message-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 14px;
+
+        &:focus {
+          outline: none;
+          border-color: #2196f3;
+        }
+      }
+
+      .message-input {
+        min-height: 100px;
+        resize: vertical;
+      }
+
+      .submit-btn {
+        align-self: flex-end;
+        padding: 8px 16px;
+        background-color: #2196f3;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 500;
+
+        &:hover {
+          background-color: darken(#2196f3, 10%);
+        }
+      }
+    }
+  }
+
+  .feed-filter {
+    margin-bottom: 20px;
+
+    .filter-input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+
+      &:focus {
+        outline: none;
+        border-color: #2196f3;
+      }
+    }
+  }
+
+  .comments-list {
+    .comment-item {
+      display: flex;
+      gap: 15px;
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .comment-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      .comment-content {
+        flex: 1;
+
+        .comment-email {
+          color: #666;
+          margin-bottom: 5px;
+          font-size: 14px;
+        }
+
+        .comment-message {
+          color: #333;
+          line-height: 1.4;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
