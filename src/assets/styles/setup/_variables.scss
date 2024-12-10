@@ -12,7 +12,20 @@ $gray2: #aaa;
 $gray3: #777;
 $gray4: #333;
 
+// // Colors
+// $primary: #your-color;
+// $secondary: #your-color;
+// $accent: #your-color;
+// $background: #your-color;
+// $text: #your-color;
+
 // Breakpoints
-$mobile-breakpoint: 460px;
-$narrow-breakpoint: 720px;
-$normal-breakpoint: 960px;
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$wide: 1200px;
+
+// Transitions
+$transition-fast: 0.2s ease;
+$transition-normal: 0.3s ease;
+$transition-slow: 0.5s ease;
