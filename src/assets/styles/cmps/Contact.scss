@@ -1,0 +1,142 @@
+.contact {
+  padding: 6rem;
+  background-color: #0d1b2a;
+
+  .contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+
+    .section-title {
+      font-size: 2rem;
+      color: #778da9;
+      margin-bottom: 1rem;
+    }
+
+    .contact-intro {
+      color: #e0e1dd;
+      margin-bottom: 3rem;
+      font-size: 1.125rem;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      .form-row {
+        display: flex;
+        gap: 1.5rem;
+
+        @media (max-width: 768px) {
+          flex-direction: column;
+        }
+      }
+
+      .form-input {
+        background: rgba(119, 141, 169, 0.1);
+        border: 1px solid rgba(119, 141, 169, 0.2);
+        padding: 1rem;
+        border-radius: 8px;
+        color: #e0e1dd;
+        font-size: 1rem;
+        width: 100%;
+        transition: border-color 0.3s ease;
+        &.error {
+          border-color: #f85149;
+        }
+        &:focus {
+          outline: none;
+          border-color: #778da9;
+        }
+
+        &::placeholder {
+          color: rgba(224, 225, 221, 0.5);
+        }
+      }
+
+      textarea.form-input {
+        resize: vertical;
+        min-height: 150px;
+      }
+
+      .send-btn {
+        background: #415a77;
+        color: #e0e1dd;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        align-self: flex-start;
+
+        &:hover {
+          background: #4a6589;
+          transform: translateY(-2px);
+        }
+        &.loading {
+          background: #415a77;
+          cursor: not-allowed;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  .loader {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #e0e1dd;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .status-message {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    animation: fadeSlideUp 0.3s ease forwards;
+
+    &.success {
+      background: rgba(46, 160, 67, 0.1);
+      color: #2ea043;
+    }
+
+    &.error {
+      background: rgba(248, 81, 73, 0.1);
+      color: #f85149;
+    }
+  }
+  .input-group {
+    position: relative;
+    width: 100%;
+
+    .error-message {
+      color: #f85149;
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+    }
+  }
+  @keyframes fadeSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

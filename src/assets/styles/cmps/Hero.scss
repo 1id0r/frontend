@@ -10,7 +10,8 @@
     max-width: 1200px;
     margin: 0;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     gap: 1rem;
 
     .greeting {
@@ -66,6 +67,20 @@
             background-color: rgba(65, 90, 119, 0.1);
           }
         }
+      }
+    }
+    .hero-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fadeUp 0.2s ease forwards;
+      animation-delay: 0.1s;
+
+      img {
+        max-width: 50%;
+        height: auto;
+        filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
       }
     }
   }
