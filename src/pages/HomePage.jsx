@@ -1,7 +1,9 @@
+import { Hero } from '../cmps/Hero'
+
 export function HomePage() {
   return (
     <div className='home'>
-      <h1>hello</h1>
+      <Hero />
     </div>
   )
 }

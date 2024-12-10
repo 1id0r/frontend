@@ -1,3 +1,4 @@
+// _base.scss
 * {
   box-sizing: border-box;
 }
@@ -7,11 +8,12 @@ html {
 }
 
 body {
-  margin: 0 auto;
-
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-    'Helvetica Neue', sans-serif;
-  font-size: rem(18px);
+  margin: 0;
+  background-color: #0d1b2a;
+  color: #e0e1dd;
+  min-height: 100vh;
+  font-family: Maven Pro, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h1,
@@ -20,7 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 0.6em;
+  margin: 0; // Remove margin since we're controlling spacing in components
 }
 
 img {
@@ -28,27 +30,15 @@ img {
   max-width: 100%;
 }
 
-p {
-  margin: 0 0 1em;
-}
-
 a {
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 ul {
   list-style: none;
   padding: 0;
-}
-
-input {
-  max-width: 100%;
-}
-
-pre {
-  white-space: pre-wrap;
+  margin: 0;
 }

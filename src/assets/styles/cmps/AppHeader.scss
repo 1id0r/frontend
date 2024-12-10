@@ -1,56 +1,94 @@
 .app-header {
-  min-height: 5rem;
-  background-color: $clr4;
-  nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(13, 27, 42, 0.95);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 10px rgba(13, 27, 42, 0.2);
+  z-index: 1000;
+  padding: 1rem 0;
+  animation: fadeIn 0.5s ease forwards;
+
+  .nav-container {
     display: flex;
-    width: 100%;
+    justify-content: space-between;
     align-items: center;
-    gap: 1em;
-
-    font-size: 0.8em;
-
-    .active {
-      color: $clr1;
-    }
-
-    .logo {
-      font-size: 1.4em;
-      font-weight: bold;
-      margin-inline-end: 2em;
-    }
-
-    .login-link {
-      margin-inline-start: auto;
-    }
-
-    button {
-      margin-inline-end: 0;
-    }
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
   }
 
-  .user-info {
+  .logo {
+    flex: 1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e0e1dd;
+  }
+
+  .nav-links {
+    flex: 2;
     display: flex;
-    align-items: center;
-    margin-inline-start: auto;
-    color: $clr1;
+    justify-content: center;
+    gap: 2rem;
 
-    .score {
-      padding: 8px;
-      background-color: $clr2;
-      border-radius: 50%;
-      margin: 10px;
+    .nav-link {
+      color: #e0e1dd;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+      padding: 0.5rem 0;
 
-      color: $clr6;
+      &:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #778da9;
+        transition: width 0.3s ease;
+      }
+
+      &:hover:after {
+        width: 100%;
+      }
+    }
+  }
+}
+.social-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+
+  a {
+    color: #e0e1dd;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      color: #778da9;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    .nav-container {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
     }
 
-    img {
-      width: 32px;
-      aspect-ratio: 1;
-      border-radius: 50%;
+    .nav-links {
+      margin: 0;
     }
 
-    .btn-link {
-      color: $clr2;
+    .social-links {
+      justify-content: center;
     }
   }
 }
