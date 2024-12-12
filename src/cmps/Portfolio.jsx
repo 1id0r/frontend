@@ -3,7 +3,7 @@ export function Portfolio() {
     {
       id: 1,
       title: 'Leedify',
-      image: 'src/assets/img/leedify.png',
+      image: '../img/leedify.png',
       tags: ['React', 'Node.js', 'MongoDB', 'Vite', 'SASS', 'NPM'],
       description:
         'A pixel-perfect Spotify clone featuring real-time user interactions, complete user management, and Spotify API integration. Users can manage playlists, share music in real-time, and enjoy a seamless streaming experience.',
@@ -13,7 +13,7 @@ export function Portfolio() {
     {
       id: 2,
       title: 'Appsus',
-      image: 'src/assets/img/appsus.png',
+      image: '../img/appsus.png',
       tags: ['React', 'CSS', 'JS'],
       description:
         'A productivity suite featuring a Gmail-inspired notes app and a digital library. Includes comprehensive CRUD operations, advanced filtering capabilities, and dynamic content management.',
@@ -23,7 +23,7 @@ export function Portfolio() {
     {
       id: 3,
       title: 'Meme Generator',
-      image: 'src/assets/img/memegen.png',
+      image: '../img/memegen.png',
       tags: ['HTML 5', 'CSS', 'JS'],
       description:
         'An interactive meme generator built with pure JavaScript and Canvas API. Users can upload images, add customizable text, and export their creations with various styling options.',
@@ -33,7 +33,7 @@ export function Portfolio() {
     {
       id: 4,
       title: 'Minesweeper',
-      image: 'src/assets/img/minesweeper.png',
+      image: '../img/minesweeper.png',
       tags: ['HTML 5', 'CSS', 'JS'],
       description:
         'A classic Minesweeper implementation showcasing recursive algorithms for cell revealing. Features multiple difficulty levels and a clean, intuitive interface.',

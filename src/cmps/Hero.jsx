@@ -10,7 +10,7 @@ export function Hero() {
             <a href='#portfolio' className='cta-btn primary'>
               View My Work
             </a>
-            <a href='src/assets/Lidor-nisim-cv.pdf' download='lidor-nisim-cv.pdf' className='cta-btn secondary'>
+            <a href='../Lidor-nisim-cv.pdf' download='lidor-nisim-cv.pdf' className='cta-btn secondary'>
               Get CV
             </a>
           </div>
