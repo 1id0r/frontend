@@ -12,14 +12,12 @@ export function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [status, setStatus] = useState('')
 
-  // Email validation
   const validateEmail = (email) => {
     return String(email)
       .toLowerCase()
       .match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)
   }
 
-  // Form validation
   const validateForm = () => {
     const newErrors = {}
 

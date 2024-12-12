@@ -3,7 +3,6 @@
   background-color: #0d1b2a;
 
   .portfolio-content {
-    // max-width: 1200px;
     margin: 0;
 
     .section-title {
@@ -140,6 +139,33 @@
           line-height: 1.5;
         }
       }
+    }
+  }
+  @media (max-width: 1440px) {
+    padding: 4rem 6rem;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 3rem;
+
+    .project-card {
+      min-width: 280px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+
+    .section-title {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 1.5rem;
+
+    .project-card {
+      min-width: 240px;
     }
   }
 }

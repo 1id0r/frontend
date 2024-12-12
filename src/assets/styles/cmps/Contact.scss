@@ -1,9 +1,58 @@
 .contact {
-  padding: 6rem;
+  padding: 4rem 10rem;
   background-color: #0d1b2a;
 
+  @media (max-width: 1440px) {
+    padding: 4rem 6rem;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 3rem;
+
+    .contact-intro {
+      margin-bottom: 2rem;
+    }
+
+    .contact-form {
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+
+    .section-title {
+      text-align: center;
+    }
+
+    .contact-intro {
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .form-input {
+      padding: 0.75rem;
+    }
+
+    .send-btn {
+      width: 100%;
+      align-self: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 1.5rem;
+
+    .contact-form {
+      gap: 2rem;
+
+      .input-group {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
   .contact-content {
-    max-width: 800px;
+    // max-width: 800px;
     margin: 0 auto;
 
     .section-title {
