@@ -71,7 +71,7 @@ export function Contact() {
   }
 
   return (
-    <section className='contact'>
+    <section id='contact' className='contact'>
       <div className='contact-content'>
         <h2 className='section-title'>Contact</h2>
         <p className='contact-intro'>Feel free to reach out for collaborations or just a friendly hello</p>

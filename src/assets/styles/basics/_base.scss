@@ -1,10 +1,11 @@
-// _base.scss
 * {
   box-sizing: border-box;
 }
 
 html {
   line-height: 1.6;
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
 }
 
 body {

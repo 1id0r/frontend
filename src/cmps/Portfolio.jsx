@@ -47,7 +47,7 @@ export function Portfolio() {
   }
 
   return (
-    <section className='portfolio'>
+    <section id='portfolio' className='portfolio'>
       <div className='portfolio-content'>
         <h2 className='section-title'>Lidor's Portfolio</h2>
 

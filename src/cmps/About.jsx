@@ -1,4 +1,3 @@
-// About.jsx
 export function About() {
   const tools = [
     {
@@ -56,7 +55,7 @@ export function About() {
   ]
 
   return (
-    <section className='about'>
+    <section id='about' className='about'>
       <div className='about-content'>
         <h2 className='section-title'>About Me</h2>
         <div className='about-grid'>
