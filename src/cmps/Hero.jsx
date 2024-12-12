@@ -16,7 +16,7 @@ export function Hero() {
           </div>
         </div>
         <div className='hero-image'>
-          <img src='../public/img/home-img.png' alt='Developer illustration' />
+          <img src='../img/home-img.png' alt='Developer illustration' />
         </div>
       </div>
     </section>
