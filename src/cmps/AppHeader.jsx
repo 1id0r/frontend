@@ -1,3 +1,4 @@
+// AppHeader.jsx
 import { useState } from 'react'
 
 export function AppHeader() {
@@ -7,33 +8,16 @@ export function AppHeader() {
     const element = document.getElementById(sectionId)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
+      setIsMenuOpen(false)
     }
   }
 
   return (
-    <header className='app-header'>
+    <header className='app-header full'>
       <div className='nav-container'>
         <div className='logo'>Lidor</div>
 
-        {/* mobilenav */}
-        <div className='mobile-nav'>
-          <div className='social-links'>
-            <a href='https://github.com/1id0r' target='_blank' rel='noopener noreferrer'>
-              <i className='fab fa-github'></i>
-            </a>
-            <a href='https://www.linkedin.com/in/lidor-nissim-397009231/' target='_blank' rel='noopener noreferrer'>
-              <i className='fab fa-linkedin'></i>
-            </a>
-          </div>
-          <button className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-
-        {/* webnav */}
-        <nav className='nav-links'>
+        <nav className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
           <a onClick={() => scrollToSection('hero')} className='nav-link'>
             Home
           </a>
@@ -48,13 +32,20 @@ export function AppHeader() {
           </a>
         </nav>
 
-        <div className='social-links'>
-          <a href='https://github.com/1id0r' target='_blank' rel='noopener noreferrer'>
-            <i className='fab fa-github'></i>
-          </a>
-          <a href='https://www.linkedin.com/in/lidor-nissim-397009231/' target='_blank' rel='noopener noreferrer'>
-            <i className='fab fa-linkedin'></i>
-          </a>
+        <div className='right-section'>
+          <div className='social-links'>
+            <a href='https://github.com/1id0r' target='_blank' rel='noopener noreferrer'>
+              <i className='fab fa-github'></i>
+            </a>
+            <a href='https://www.linkedin.com/in/lidor-nissim-397009231/' target='_blank' rel='noopener noreferrer'>
+              <i className='fab fa-linkedin'></i>
+            </a>
+          </div>
+          <button className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
     </header>
