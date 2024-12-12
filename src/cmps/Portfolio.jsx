@@ -8,7 +8,7 @@ export function Portfolio() {
       description:
         'A pixel-perfect Spotify clone featuring real-time user interactions, complete user management, and Spotify API integration. Users can manage playlists, share music in real-time, and enjoy a seamless streaming experience.',
       projectLink: 'https://leedify.onrender.com/',
-      githubLink: 'https://leedify.onrender.com/',
+      githubLink: 'https://github.com/LeeShavit/leedify-frontend',
     },
     {
       id: 2,
