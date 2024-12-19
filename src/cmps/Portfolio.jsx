@@ -1,3 +1,5 @@
+import { PortfolioDecoration } from './svgsDecoration'
+
 export function Portfolio() {
   const projects = [
     {
@@ -49,7 +51,10 @@ export function Portfolio() {
   return (
     <section id='portfolio' className='portfolio'>
       <div className='portfolio-content'>
-        <h2 className='section-title'>Lidor's Portfolio</h2>
+        <div className='section-title-container'>
+          <PortfolioDecoration />
+          <h2 className='section-title'>Lidor's Portfolio</h2>
+        </div>
 
         <div className='projects-carousel'>
           {projects.map((project) => (

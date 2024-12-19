@@ -15,3 +15,31 @@ $wide: 1200px;
 $transition-fast: 0.2s ease;
 $transition-normal: 0.3s ease;
 $transition-slow: 0.5s ease;
+
+.section-title-container {
+  display: flex;
+  gap: 1rem;
+
+  .section-title {
+    font-size: 2rem;
+    color: #778da9;
+    margin: 0;
+    line-height: 1;
+  }
+
+  .section-decoration {
+    flex-shrink: 0;
+    animation: slideInRight 0.5s ease-out;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
+import { ContactDecoration } from './svgsDecoration'
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -76,7 +77,10 @@ export function Contact() {
   return (
     <section id='contact' className='contact'>
       <div className='contact-content'>
-        <h2 className='section-title'>Contact</h2>
+        <div className='section-title-container'>
+          <ContactDecoration />
+          <h2 className='section-title'>Contact</h2>
+        </div>
         <p className='contact-intro'>Feel free to reach out for collaborations or just a friendly hello</p>
 
         <form className='contact-form' onSubmit={handleSubmit}>

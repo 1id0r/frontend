@@ -1,3 +1,5 @@
+import { AboutDecoration } from './svgsDecoration'
+import { ToolboxDecoration } from './svgsDecoration'
 export function About() {
   const tools = [
     {
@@ -57,7 +59,10 @@ export function About() {
   return (
     <section id='about' className='about'>
       <div className='about-content'>
-        <h2 className='section-title'>About Me</h2>
+        <div className='section-title-container'>
+          <AboutDecoration />
+          <h2 className='section-title'>About Me</h2>
+        </div>
         <div className='about-grid'>
           <div className='about-text'>
             <p>
@@ -67,7 +72,10 @@ export function About() {
             </p>
           </div>
           <div className='skills-list'>
-            <h3>My Toolbox</h3>
+            <div className='section-title-container'>
+              <ToolboxDecoration />
+              <h3>My Toolbox</h3>
+            </div>
             <div className='tools-grid'>
               {tools.map((tool, index) => (
                 <div key={index} className='tool-item'>
