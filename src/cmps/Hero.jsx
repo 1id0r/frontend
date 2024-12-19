@@ -1,6 +1,10 @@
+import ParticleBackground from './ParticalsBackground'
+
 export function Hero() {
   return (
     <section id='hero' className='hero'>
+      <ParticleBackground />
+
       <div className='hero-content'>
         <div className='hero-text'>
           <h2 className='greeting'>Hi, I'm Lidor</h2>
