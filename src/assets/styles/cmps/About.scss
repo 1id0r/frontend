@@ -3,7 +3,6 @@
   background-color: #0d1b2a;
 
   .about-content {
-    // max-width: 1200px;
     margin: 0;
 
     .section-title {
@@ -23,7 +22,7 @@
       .about-text {
         p {
           color: #e0e1dd;
-          font-size: 1.125rem;
+          font-size: 1.3rem;
           line-height: 1.7;
           margin-bottom: 1.5rem;
 
@@ -63,7 +62,8 @@
 
             &:hover {
               background: rgba(65, 90, 119, 0.5);
-              transform: translateY(-2px);
+              transform: translateY(-5px);
+              filter: brightness(1.2);
             }
           }
         }

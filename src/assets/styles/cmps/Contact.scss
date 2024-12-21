@@ -153,10 +153,12 @@
     margin-top: 1rem;
     padding: 1rem;
     border-radius: 8px;
+    margin-bottom: 20px;
     animation: fadeSlideUp 0.3s ease forwards;
+    text-align: center;
 
     &.success {
-      background: rgba(46, 160, 67, 0.1);
+      background: rgba(46, 160, 67, 0.05);
       color: #2ea043;
     }
 

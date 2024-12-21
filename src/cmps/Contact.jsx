@@ -82,7 +82,8 @@ export function Contact() {
           <h2 className='section-title'>Contact</h2>
         </div>
         <p className='contact-intro'>Feel free to reach out for collaborations or just a friendly hello</p>
-
+        {status === 'success' && <div className='status-message success'>Message sent successfully! ✨</div>}
+        {status === 'error' && <div className='status-message error'>Failed to send message. Please try again.</div>}
         <form className='contact-form' onSubmit={handleSubmit}>
           <div className='form-row'>
             <div className='input-group'>
@@ -149,9 +150,6 @@ export function Contact() {
           <button type='submit' className={`send-btn ${isSubmitting ? 'loading' : ''}`} disabled={isSubmitting}>
             {status === 'sending' ? <span className='loader'></span> : 'Send Message'}
           </button>
-
-          {status === 'success' && <div className='status-message success'>Message sent successfully! ✨</div>}
-          {status === 'error' && <div className='status-message error'>Failed to send message. Please try again.</div>}
         </form>
       </div>
     </section>
