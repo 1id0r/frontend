@@ -14,7 +14,7 @@ export function AppHeader() {
   return (
     <header className='app-header full'>
       <div className='nav-container'>
-        <div className='logo'>
+        <div onClick={() => scrollToSection('hero')} className='logo'>
           <img src='./img/profile-pic.jpeg' alt='Profile' className='profile-pic' />
           Lidor
         </div>
