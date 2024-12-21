@@ -14,7 +14,10 @@ export function AppHeader() {
   return (
     <header className='app-header full'>
       <div className='nav-container'>
-        <div className='logo'>Lidor</div>
+        <div className='logo'>
+          <img src='./img/profile-pic.jpeg' alt='Profile' className='profile-pic' />
+          Lidor
+        </div>
 
         <nav className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
           <a onClick={() => scrollToSection('hero')} className='nav-link'>
