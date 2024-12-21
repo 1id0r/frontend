@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Routes, Route } from 'react-router'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import { HomePage } from './pages/HomePage'
-
 import { AppHeader } from './cmps/AppHeader'
 
 export function RootCmp() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+    })
+  }, [])
+
   return (
     <div className='main-container'>
       <AppHeader />

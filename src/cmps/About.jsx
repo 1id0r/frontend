@@ -74,9 +74,9 @@ export function About() {
           <div className='skills-list'>
             <div className='section-title-container'>
               <ToolboxDecoration />
-              <h3>My Toolbox</h3>
+              <h3 data-aos='fade-down'>My Toolbox</h3>
             </div>
-            <div className='tools-grid'>
+            <div data-aos='zoom-in' data-aos-delay='200' className='tools-grid'>
               {tools.map((tool, index) => (
                 <div key={index} className='tool-item'>
                   <div className='tool-icon'>{tool.icon}</div>

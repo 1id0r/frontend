@@ -12,10 +12,10 @@ export function AppHeader() {
   }
 
   return (
-    <header className='app-header full'>
+    <header data-aos='zoom-in-down' className='app-header full'>
       <div className='nav-container'>
         <div onClick={() => scrollToSection('hero')} className='logo'>
-          <img src='./img/profile-pic.jpeg' alt='Profile' className='profile-pic' />
+          <img src='./img/profile-pic.jpeg' alt='Profile' data-aos='fade-right' className='profile-pic' />
           Lidor
         </div>
 
@@ -36,10 +36,15 @@ export function AppHeader() {
 
         <div className='right-section'>
           <div className='social-links'>
-            <a href='https://github.com/1id0r' target='_blank' rel='noopener noreferrer'>
+            <a href='https://github.com/1id0r' target='_blank' data-aos='fade-right' rel='noopener noreferrer'>
               <i className='fab fa-github'></i>
             </a>
-            <a href='https://www.linkedin.com/in/lidor-nissim-397009231/' target='_blank' rel='noopener noreferrer'>
+            <a
+              href='https://www.linkedin.com/in/lidor-nissim-397009231/'
+              target='_blank'
+              data-aos='fade-right'
+              rel='noopener noreferrer'
+            >
               <i className='fab fa-linkedin'></i>
             </a>
           </div>
