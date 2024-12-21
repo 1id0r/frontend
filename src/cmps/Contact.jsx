@@ -77,14 +77,24 @@ export function Contact() {
   return (
     <section id='contact' className='contact'>
       <div className='contact-content'>
-        <div className='section-title-container'>
+        <div className='section-title-container' data-aos='fade-down'>
           <ContactDecoration />
           <h2 className='section-title'>Contact</h2>
         </div>
-        <p className='contact-intro'>Feel free to reach out for collaborations or just a friendly hello</p>
-        {status === 'success' && <div className='status-message success'>Message sent successfully! ✨</div>}
-        {status === 'error' && <div className='status-message error'>Failed to send message. Please try again.</div>}
-        <form className='contact-form' onSubmit={handleSubmit}>
+        <p className='contact-intro' data-aos='fade-down'>
+          Feel free to reach out for collaborations or just a friendly hello
+        </p>
+        {status === 'success' && (
+          <div data-aos='fade-down' className='status-message success'>
+            Message sent successfully! ✨
+          </div>
+        )}
+        {status === 'error' && (
+          <div data-aos='fade-down' className='status-message error'>
+            Failed to send message. Please try again.
+          </div>
+        )}
+        <form data-aos='zoom-in' className='contact-form' onSubmit={handleSubmit}>
           <div className='form-row'>
             <div className='input-group'>
               <input

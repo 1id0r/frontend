@@ -51,14 +51,19 @@ export function Portfolio() {
   return (
     <section id='portfolio' className='portfolio'>
       <div className='portfolio-content'>
-        <div className='section-title-container'>
+        <div className='section-title-container' data-aos='fade-down'>
           <PortfolioDecoration />
           <h2 className='section-title'>Lidor's Portfolio</h2>
         </div>
 
         <div className='projects-carousel'>
           {projects.map((project) => (
-            <div key={project.id} className='project-card' onClick={() => handleProjectClick(project.projectLink)}>
+            <div
+              key={project.id}
+              className='project-card'
+              data-aos='fade-right'
+              onClick={() => handleProjectClick(project.projectLink)}
+            >
               <div className='project-image'>
                 <img src={project.image} alt={project.title} />
                 <div className='project-links'>

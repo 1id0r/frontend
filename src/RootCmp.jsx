@@ -8,7 +8,7 @@ import { AppHeader } from './cmps/AppHeader'
 export function RootCmp() {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 500,
       easing: 'ease-in-out',
       once: true,
     })

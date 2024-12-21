@@ -59,12 +59,14 @@ export function About() {
   return (
     <section id='about' className='about'>
       <div className='about-content'>
-        <div className='section-title-container'>
+        <div className='section-title-container' data-aos='fade-down'>
           <AboutDecoration />
-          <h2 className='section-title'>About Me</h2>
+          <h2 className='section-title' data-aos='fade-down'>
+            About Me
+          </h2>
         </div>
         <div className='about-grid'>
-          <div className='about-text'>
+          <div data-aos='fade-right' className='about-text'>
             <p>
               I'm a Full Stack Developer with a passion for building web applications that are both functional and
               user-friendly. I specialize in modern web technologies and enjoy solving complex problems through clean,
@@ -72,11 +74,11 @@ export function About() {
             </p>
           </div>
           <div className='skills-list'>
-            <div className='section-title-container'>
+            <div className='section-title-container' data-aos='fade-down'>
               <ToolboxDecoration />
-              <h3 data-aos='fade-down'>My Toolbox</h3>
+              <h3>My Toolbox</h3>
             </div>
-            <div data-aos='zoom-in' data-aos-delay='200' className='tools-grid'>
+            <div data-aos='flip-down' data-aos-delay='200' className='tools-grid'>
               {tools.map((tool, index) => (
                 <div key={index} className='tool-item'>
                   <div className='tool-icon'>{tool.icon}</div>

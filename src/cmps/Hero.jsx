@@ -7,14 +7,25 @@ export function Hero() {
 
       <div className='hero-content'>
         <div className='hero-text'>
-          <h2 className='greeting'>Hi, I'm Lidor</h2>
-          <h1 className='title'>Full Stack Developer</h1>
-          <p className='description'>I build modern web applications with a focus on user experience and clean code.</p>
+          <h2 className='greeting' data-aos='fade-right'>
+            Hi, I'm Lidor
+          </h2>
+          <h1 className='title' data-aos-delay='300' data-aos='fade-down'>
+            Full Stack Developer
+          </h1>
+          <p className='description' data-aos='fade-right'>
+            I build modern web applications with a focus on user experience and clean code.
+          </p>
           <div className='cta-buttons'>
-            <a href='#portfolio' className='cta-btn primary'>
+            <a href='#portfolio' data-aos='zoom-in' className='cta-btn primary'>
               View My Work
             </a>
-            <a href='../Lidor-nisim-cv.pdf' download='lidor-nisim-cv.pdf' className='cta-btn secondary'>
+            <a
+              href='../Lidor-nisim-cv.pdf'
+              data-aos='zoom-in'
+              download='lidor-nisim-cv.pdf'
+              className='cta-btn secondary'
+            >
               Get CV
             </a>
           </div>
